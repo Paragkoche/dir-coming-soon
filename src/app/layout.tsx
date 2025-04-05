@@ -12,27 +12,30 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// import type { Metadata } from "next";
+
 export const metadata: Metadata = {
   title: {
-    default: "thegrate4u.com | All-in-One Online Directory",
-    template: "%s | thegrate4u.com",
+    default: "thegreat4u.com | All-in-One Online Directory",
+    template: "%s | thegreat4u.com",
   },
   description:
-    "thegrate4u.com is your ultimate all-in-one online directory. Find businesses, services, local events, and classifieds quickly and easily — all in one place.",
+    "thegreat4u.com is your go-to online directory for finding businesses, services, local events, and more — all in one convenient place.",
   keywords: [
     "online directory",
     "business listings",
-    "services",
+    "find services",
     "local businesses",
     "classifieds",
     "events",
+    "places near me",
     "directory website",
-    "thegrate4u",
-    "thegrate4u.com",
+    "thegreat4u",
+    "thegreat4u.com",
   ],
-  authors: [{ name: "thegrate4u.com", url: "https://www.thegrate4u.com" }],
-  creator: "thegrate4u.com",
-  publisher: "thegrate4u.com",
+  authors: [{ name: "thegreat4u.com", url: "https://www.thegreat4u.com" }],
+  creator: "thegreat4u.com",
+  publisher: "thegreat4u.com",
   robots: {
     index: true,
     follow: true,
@@ -46,22 +49,22 @@ export const metadata: Metadata = {
       // maxSnippet: -1,
     },
   },
-  metadataBase: new URL("https://www.thegrate4u.com"),
+  metadataBase: new URL("https://www.thegreat4u.com"),
   alternates: {
-    canonical: "https://www.thegrate4u.com",
+    canonical: "https://www.thegreat4u.com",
   },
   openGraph: {
-    title: "thegrate4u.com | All-in-One Online Directory",
+    title: "thegreat4u.com | All-in-One Online Directory",
     description:
-      "Explore top businesses, services, classifieds, and events — all in one place. thegrate4u.com makes it easy to find what you need.",
-    url: "https://www.thegrate4u.com",
-    siteName: "thegrate4u.com",
+      "Find local businesses, services, events, and more with thegreat4u.com — the directory that makes discovering everything easier.",
+    url: "https://www.thegreat4u.com",
+    siteName: "thegreat4u.com",
     images: [
       {
-        url: "https://www.thegrate4u.com/og-image.jpg", // Update with real image path
+        url: "https://www.thegreat4u.com/og-image.jpg", // Replace with actual image
         width: 1200,
         height: 630,
-        alt: "thegrate4u.com - Online Directory",
+        alt: "thegreat4u.com - Your All-in-One Online Directory",
       },
     ],
     locale: "en_US",
@@ -69,17 +72,19 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "thegrate4u.com | All-in-One Online Directory",
+    title: "thegreat4u.com | All-in-One Online Directory",
     description:
-      "Find everything from businesses to events on thegrate4u.com – the only directory you'll ever need.",
-    creator: "@thegrate4u", // optional if you have a Twitter handle
-    images: ["https://www.thegrate4u.com/twitter-image.jpg"],
+      "Discover everything from businesses to events with thegreat4u.com — your one-stop online directory.",
+    creator: "@thegreat4u", // if you have a Twitter handle
+    images: ["https://www.thegreat4u.com/twitter-image.jpg"], // Replace with your image
   },
   category: "Directory",
   themeColor: "#ffffff",
   colorScheme: "light",
   icons: {
     icon: "/favicon.ico",
+    // shortcut: "/favicon-32x32.png",
+    // apple: "/apple-touch-icon.png",
   },
   viewport: {
     width: "device-width",

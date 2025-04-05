@@ -44,6 +44,6 @@ export default function RedoAnimText({ delay }: IRedoAnimTextProps) {
   }, []);
 
   return (
-    <motion.span className="inline -tracking-[5px]">{displayText}</motion.span>
+    <motion.span className="inline lg:-tracking-[5px]">{displayText}</motion.span>
   );
 }

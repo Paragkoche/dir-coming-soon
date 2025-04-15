@@ -8,7 +8,21 @@ export interface IRedoAnimTextProps {
 
 export default function RedoAnimText({ delay }: IRedoAnimTextProps) {
   const textIndex = useMotionValue(0);
-  const texts = ["TheGreat4U.com", "Coming Soon"];
+  const texts = [
+    "TheGreat4U.com",
+    "Find Local Businesses",
+    "Discover Local Gems",
+    "Your Service Directory",
+    "Connecting You Fast",
+    "Find What You Need",
+    "Explore Local Anytime",
+    "Unlock Local Deals",
+    "Empower Your Community",
+    "Discover & Thrive Locally",
+    "Exciting Things Ahead!",
+    "Almost There — Stay Tuned!",
+    "Get Ready — Coming Soon!",
+  ];
 
   const baseText = useTransform(textIndex, (latest) => texts[latest] || "");
   const count = useMotionValue(0);
@@ -44,6 +58,8 @@ export default function RedoAnimText({ delay }: IRedoAnimTextProps) {
   }, []);
 
   return (
-    <motion.span className="inline lg:-tracking-[5px]">{displayText}</motion.span>
+    <motion.span className="inline lg:-tracking-[5px]">
+      {displayText}
+    </motion.span>
   );
 }
